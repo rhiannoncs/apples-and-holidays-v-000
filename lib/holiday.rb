@@ -64,7 +64,7 @@ def all_supplies_in_holidays(holiday_hash)
         holiday_array_pt1 = holiday.to_s.split("_")
         holiday_array_pt2 = holiday_array_pt1.collect{|string| string.capitalize}
         puts "  #{holiday_array_pt2.join(" ")}: #{supply_array.join(", ")}"
-      else puts " #{holiday.to_s.capitalize}: #{supply_array.join(", ")}"
+      else puts "  #{holiday.to_s.capitalize}: #{supply_array.join(", ")}"
       end
     end
   end
